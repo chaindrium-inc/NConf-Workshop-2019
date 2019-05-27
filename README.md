@@ -181,7 +181,7 @@ diese Felder beeinflussen.
 - erzeugen Sie eine Transaktion die den Contract auf der Blockchain erstellt
 - geben Sie den Hash der Transaktion am Ende Ihres Skriptes aus
 
-- Erzeugen Sie einen `potato` Contract
+- Erzeugen Sie einen `potato` Smart Contract auf der Blockchain
 
 #### Aufgabe 2:
 - Erstellen Sie eine Datei (`send_potato.py`) die den `potato` Smart Contract an die Fabrik sendet
