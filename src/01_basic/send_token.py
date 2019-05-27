@@ -29,7 +29,7 @@ with open("token_contract/NConfToken.abi") as abi_file:
 token_contract = w3.eth.contract(abi=contract_abi, address=token_address)
 
 # open the wallet we generated
-with open("private.key", "rb") as key_file:
+with open("wallet/private.key", "rb") as key_file:
     account = Account().privateKeyToAccount(key_file.read())
 
 # set transaction parameters
