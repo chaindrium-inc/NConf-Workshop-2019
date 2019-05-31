@@ -2,13 +2,16 @@
 # NConf 2019
 ## Workshop Supply Chain Management using Blockchains
 ### von [Chaindrium](chaindrium.com)
+<br/><br/><br/>
 
-Dieses Repository enthält 3 Teile. Sie können ganz nach Ihrem Wunsch eines der beiden Projekte im Zuge des Workshops bearbeiten.
-- Für nicht Programmierer
+Lassen Sie sich nicht von der Menge an Text abschrecken, blockchains sind halt kompliziert :)
+
+Dieses Repository enthält drei Teile. Sie können ganz nach Ihrem Wunsch eines der drei Projekte im Zuge des Workshops bearbeiten. Wir empfehlen allerdings den Teil "Für Programmierer" vor "Für Hard-Coder" zu machen.
+- Für Nicht-Programmierer
 - Für Programmierer
 - Für Hard-Coder
 
-### Für nicht Programmierer
+### Für Nicht-Programmierer
 Diese Anleitung leitet Sie durch den Prozess eine Transaktion auf dem [Ethereum Test Netzwerk](https://ropsten.etherscan.io/) von einer Addresse zu einer anderen ausführen. Dieses Projekt richtet sich explizit an Menschen die keine Programmiererfahrung haben und trotzdem gerne einen Einblick in den praktischen Umgang mit Blockchains haben möchten.
 *Sollten Sie Fragen haben geben Sie gerne Handzeichen oder sprechen uns direkt an.*
 
@@ -20,7 +23,7 @@ Dazu sind die folgenden Schritte nötig:
 	- wählen Sie `Mnemonic Phrase` aus und klicken Sie `continue`
 	- geben Sie die von uns bereit gestellten 12 Werte ein
 		- Jetzt sollten Sie unter `1` das testnet `ROP - myetherwallet.com` auswählen
-		- unter `2` müssen Sie jetzt noch oben rechts `Ethereum Testnet (Ropsten)` Auswählen
+		- unter `2` müssen Sie oben rechts `Ethereum Testnet (Ropsten)` Auswählen
 		- nun sollten Sie eine Liste mit Addressen und Guthaben sehen
 		- wähen Sie eine der Addressen, die ein Guthaben hat, aus und klicken Sie auf `Access My Wallet`
 			- (Wir koordinieren dann dass nicht alle die selbe Addresse auswählen)
@@ -66,12 +69,12 @@ Diese Anleitung begleitet Sie anhand eines Beispiels durch den Prozess Entitäte
 	- Führen Sie die Datei aus
 		- Jetzt sollten Sie von dem Skript eine Adresse zurück geliefert bekommen haben, kopieren und speichern Sie diese Adresse, Sie werden sie später noch brauchen
 		- Außerdem hat das Skript eine die Datei `wallet/private.key` erzeugt. In dieser befindet sich Ihr privater Schlüssel. Passen Sie gut auf diese Datei auf. Sollten Sie den Schlüssel verlieren, dann haben Sie keine Möglichkeit mehr auf Ihr Wallet zu zu greifen.
-	- Da das Skript Ihre `private.key` überschreibt sollten Sie es lediglich einmal ausführen
+	- Da das Skript Ihre `wallet/private.key` Datei überschreibt sollten Sie es lediglich einmal ausführen
 
 - **Guthaben kaufen und abfragen**
 	- Sie brauchen Guthaben auf Ihrem Wallet da Transaktionen Gebühren kosten, sonst können Sie keine Transaktionen ausführen
 		- Tragen Sie Ihre generierte Addresse [hier](https://medienpad.de/p/chaindrium) ein. Wir werden Ihnen dann etwas Guthaben schenken, damit Sie weiter arbeiten können. Dies kann allerdings einen Moment in Anspruch nehmen.
-	- Jetzt können Sie die Datei `see_balance.py` ansehen und ausführen, dann sollten Sie das Aktuelle Guthaben ihres Wallets sehen
+	- Jetzt können Sie die Datei `see_balance.py` ansehen und (nach dem Sie Ihre Addresse eingefügt haben) ausführen, dann sollten Sie das Aktuelle Guthaben ihres Wallets sehen
 	- Sobald Ihr Guthaben großer als 0 ist können Sie mit dem nächsten Schritt fortfahren
 		- in der Zwischenzeit könne Sie ja mal einen Blick auf die Datei `token_contract/NConfToken.sol` werfen. Das ist der Smart Contract den wir gleich auf die Blockchain laden werden.
 
@@ -119,7 +122,7 @@ Diese Anleitung begleitet Sie anhand eines Beispiels durch den Prozess Entitäte
 			- hier sollten Sie jetzt einen Überblick über Ihr Guthaben und die von Ihnen ausgelösten, bzw. Erhaltenen Transaktionen sehen
 
 ### Für Hard-Coder
-Die hier präsentierten Aufgaben können Sie nur lösen wenn Sie die Konzepte und Ideen hinter der Anleitung **Für Programmierer** verstanden haben. Hier werden Sie mit Absicht nicht an die Hand genommen sondern sollen selbst eine Anwendung für Blockchains entwickeln. Sollten Sie die Aufgaben zu schwer oder unverständlich finden legen wir Ihnen Nahe die Anleitung **Für Programmierer** zu erst zu machen.
+Die hier präsentierten Aufgaben können Sie nur lösen wenn Sie die Konzepte und Ideen hinter der Anleitung **Für Programmierer** verstanden haben. Hier werden Sie mit Absicht nicht an die Hand genommen sondern sollen selbst eine Anwendung für Blockchains entwickeln. Sollten Sie die Aufgaben zu schwer oder unverständlich finden legen wir Ihnen nahe die Anleitung **Für Programmierer** zu erst zu machen.
 *Sollten Sie Fragen haben geben sie gerne Handzeichen oder sprechen uns direkt an.*
 
 #### Was Sie benötigen: 
@@ -177,7 +180,7 @@ diese Felder beeinflussen.
 - Erstellen Sie eine Datei (`deploy_potato.py`) die den `potato` Smart Contract mit der von Ihnen generierten Adresse auf der Blockchain erstellt
 - Geben Sie dem Constructor des `potato` Contracts 
 	- sowohl einen `string name` der den Namen der Kartoffel darstellt (https://de.wikipedia.org/wiki/Liste_von_Kartoffelsorten) 
-	- als auch eine `address producer` mit der Adresse des Produzenten
+	- als auch eine `address producer` die die Adresse des Produzenten darstellt
 - erzeugen Sie eine Transaktion die den Contract auf der Blockchain erstellt
 - geben Sie den Hash der Transaktion am Ende Ihres Skriptes aus
 
@@ -200,3 +203,4 @@ diese Felder beeinflussen.
 - Führen Sie die Datei aus und überprüfen Sie ob alle Informationen korrekt sind
 
 
+Viel Spass und Erfolg :)
