@@ -1,12 +1,12 @@
 
 # NConf 2019
 ## Workshop Supply Chain Management using Blockchains
-### von [Chaindrium](chaindrium.com)
+### von [Chaindrium](https://chaindrium.com)
 <br/><br/><br/>
 
-Lassen Sie sich nicht von der Menge an Text abschrecken, blockchains sind halt kompliziert :)
+Lassen Sie sich nicht von der Menge an Text abschrecken, Blockchains sind halt kompliziert :)
 
-Dieses Repository enthält drei Teile. Sie können ganz nach Ihrem Wunsch eines der drei Projekte im Zuge des Workshops bearbeiten. Wir empfehlen allerdings den Teil "Für Programmierer" vor "Für Hard-Coder" zu machen.
+Dieses Repository enthält drei Teile. Sie können ganz nach Ihrem Wunsch eines der drei Projekte im Zuge des Workshops bearbeiten. Wir empfehlen allerdings den Teil "Für Programmierer" vor dem Teil "Für Hard-Coder" zu machen.
 - Für Nicht-Programmierer
 - Für Programmierer
 - Für Hard-Coder
@@ -28,22 +28,22 @@ Dazu sind die folgenden Schritte nötig:
 		- wähen Sie eine der Addressen, die ein Guthaben hat, aus und klicken Sie auf `Access My Wallet`
 			- (Wir koordinieren dann dass nicht alle die selbe Addresse auswählen)
 		
-- **Eine Transaction Senden**
-	- Sie sollten jetzt eine Übersicht über Ihren Account sehen. Dort können Sie dann unter `Send Transaction` eine Transaktion senden.
+- **Eine Transaktion Senden**
+	- Sie sollten jetzt eine Übersicht über Ihren Account sehen. Dort können Sie dann unter `Send Transaktion` eine Transaktion senden.
 	- Dazu müssen Sie die entsprechenden Felder ausfüllen
 		- Tragen Sie unter `To Address` eine Addresse ein, vielleicht finden Sie ja einen Partner dem Sie etwas von Ihrem Guthaben schicken möchten.
 		- Unter `Amount` Tragen Sie bitte den Betrag ein den Sie senden möchten. 
-	- Ihr Account hat momenten ca 0.5 ROP (Die Währung des Test-Netzwerkes), das heißt sie müssen einen Betrag wählen der kleiner ist, das liegt daran dass Transaktionen Gebühren kosten, sollten Sie also versuchen all Ihr Geld zu versenden haben Sie kein Geld mehr um die Transaktions-Gebühren zu bezahlen.
-	- Jetzt können Sie auf `Send Transaction` klicken
-	- Danach öffnet sich ein Fenster in dem Sie die Transaction nochmals überprüfen und dann bestätigen können
+	- Ihr Account hat momenten ca 0.5 ROP (Die Währung des Test-Netzwerkes), das heißt sie müssen einen Betrag wählen der kleiner ist, das liegt daran dass Transaktionen Gebühren kosten, sollten Sie also versuchen all Ihr Geld zu versenden haben Sie kein Geld mehr um die Transaktions-Gebühren zu bezahlen (wählen Sie einen Betrag der relativ klein ist, damit nicht alles Geld sofort weg ist und andere auch noch ausprobieren können).
+	- Jetzt können Sie auf `Send Transaktion` klicken
+	- Danach öffnet sich ein Fenster in dem Sie die Transaktion nochmals überprüfen und dann bestätigen können
 
-- **Fertig**, Sie haben jetzt eine Transaction von Ihrer Addresse zu der von Ihnen eingegebenen Addresse ausgelöst. Es wird einige Sekunden dauern bis diese Transaction in der Blockchain eingebettet ist
+- **Fertig**, Sie haben jetzt eine Transaktion von Ihrer Addresse zu der von Ihnen eingegebenen Addresse ausgelöst. Es wird einige Sekunden dauern bis diese Transaktion in der Blockchain eingebettet ist
 
-- **Die Transaction auf etherscan.io anschauen**
-	- Dafür klicken Sie nach dem Bestätigen der Transaction auf `Check Status on Etherscan.io`
-	- Jetzt sollte sich in Ihrem Browser ein neues Fenster geöffnet haben, dort können Sie sich die Detaills ihrer Transaction anschauen.
-	- Zum Beispiel könnten Sie sich den Hash Ihrer Transaction anschauen
-	- Oder Sie könnten den Block, in dem die Transaction eingebettet ist,  untersuchen und sich ansehen welche anderen Transactionen noch in diesem Block waren
+- **Die Transaktion auf etherscan.io anschauen**
+	- Dafür klicken Sie nach dem Bestätigen der Transaktion auf `Check Status on Etherscan.io`
+	- Jetzt sollte sich in Ihrem Browser ein neues Fenster geöffnet haben, dort können Sie sich die Detaills ihrer Transaktion anschauen.
+	- Zum Beispiel könnten Sie sich den Hash Ihrer Transaktion anschauen
+	- Oder Sie könnten den Block, in dem die Transaktion eingebettet ist,  untersuchen und sich ansehen welche anderen Transaktionen noch in diesem Block waren
 
 
 ### Für Programmierer
@@ -133,7 +133,6 @@ Die hier präsentierten Aufgaben können Sie nur lösen wenn Sie die Konzepte un
 	- `source ./virtual_env/bin/activate`
 	- jetzt befinden Sie sich in einer Virtuellen Python3 Umgebung die wir für Sie vorbereitet haben
 
-- Navigieren sie zu
 
 #### Was wollen wir hier entwickeln:
 Wir stellen uns vor Sie sind Bauer (Produzent) und Sie verkaufen Bio-Kartoffeln. Diese Kartoffeln werden von Ihnen an eine Fabrik verkauft die daraus Wodka herstellt. Dieser Wodka wird dann von jemandem gekauft (Konsument).
@@ -162,25 +161,29 @@ Es ist wichtig dass Sie verstehen was die Felder
 - `factory`
 - `is_vodka`
 - `name`
- 
+- `owner`
+
 machen 
 
 und wie Sie mit den Funktionen 
 - `constructor`
 - `send`
+- `set_factory`
 - `to_vodka`
-- `is_vodka`
-- `get_producer`
-- `get_factory`
+- `is_potato_vodka`
+- `who_is_owner`
+- `who_is_producer`
+- `who_is_factory`
 - `get_name`
+- `is_bio_potato`
 
-diese Felder beeinflussen.
+diese Felder beeinflussen/auslesen.
 
 #### Aufgabe 1:
 - Erstellen Sie eine Datei (`deploy_potato.py`) die den `potato` Smart Contract mit der von Ihnen generierten Adresse auf der Blockchain erstellt
-- Geben Sie dem Constructor des `potato` Contracts 
+- Geben Sie dem Constructor des `potato` Smart Contracts 
 	- sowohl einen `string name` der den Namen der Kartoffel darstellt (https://de.wikipedia.org/wiki/Liste_von_Kartoffelsorten) 
-	- als auch eine `address producer` die die Adresse des Produzenten darstellt
+	- die addresse des producers ist automatisch der ersteller des Smart Contracts (`producer = msg.sender` im Constructor des Smart Contracts)
 - erzeugen Sie eine Transaktion die den Contract auf der Blockchain erstellt
 - geben Sie den Hash der Transaktion am Ende Ihres Skriptes aus
 
