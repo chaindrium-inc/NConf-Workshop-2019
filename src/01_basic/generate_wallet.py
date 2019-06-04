@@ -21,4 +21,4 @@ with open("wallet/private.key", "wb") as key_file:
 print("Address:", account.address)
 
 # let the user know it succeded
-print("Your key can be found in the file \"private.key\"")
+print("Your key can be found in the file \"wallet/private.key\"")

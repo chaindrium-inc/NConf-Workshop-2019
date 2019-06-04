@@ -4,9 +4,9 @@
 pragma solidity >=0.4.22 <0.6.0;
 
 /**
- * The NConfToken contract 
+ * The NConfTicketToken contract 
  */
-contract NConfToken {
+contract NConfTicketToken {
 
     //the name of this token
     string name;

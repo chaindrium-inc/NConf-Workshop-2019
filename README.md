@@ -6,7 +6,7 @@
 
 Lassen Sie sich nicht von der Menge an Text abschrecken, Blockchains sind halt kompliziert :)
 
-Dieses Repository enthält drei Teile. Sie können ganz nach Ihrem Wunsch eines der drei Projekte im Zuge des Workshops bearbeiten. Wir empfehlen allerdings den Teil "Für Programmierer" vor dem Teil "Für Hard-Coder" zu machen.
+Dieses Repository enthält **drei** Teile. Sie können ganz nach Ihrem Wunsch eines der drei Projekte im Zuge des Workshops bearbeiten. Wir empfehlen allerdings den Teil "Für Programmierer" vor dem Teil "Für Hard-Coder" zu machen.
 - Für Nicht-Programmierer
 - Für Programmierer
 - Für Hard-Coder
@@ -21,7 +21,7 @@ Dazu sind die folgenden Schritte nötig:
 	- klicken Sie auf `Access My Wallet`
 	- klicken Sie auf `Software` 
 	- wählen Sie `Mnemonic Phrase` aus und klicken Sie `continue`
-	- geben Sie die von uns bereit gestellten 12 Werte ein
+	- geben Sie die von uns bereit gestellten 12 Werte, sie sollten auf dem Beamer zu sehen sein.
 		- Jetzt sollten Sie unter `1` das testnet `ROP - myetherwallet.com` auswählen
 		- unter `2` müssen Sie oben rechts `Ethereum Testnet (Ropsten)` Auswählen
 		- nun sollten Sie eine Liste mit Addressen und Guthaben sehen
@@ -46,6 +46,8 @@ Dazu sind die folgenden Schritte nötig:
 	- Oder Sie könnten den Block, in dem die Transaktion eingebettet ist,  untersuchen und sich ansehen welche anderen Transaktionen noch in diesem Block waren
 
 
+<br/><br/><br/>
+
 ### Für Programmierer
 Diese Anleitung begleitet Sie anhand eines Beispiels durch den Prozess Entitäten auf der Blockchain zu erstellen, zu versenden und Daten dieser Entitäten von der Blockchain zu holen. Dieses Projekt erklärt die Basis auf der mit einer Blockchain interagiert werden kann. Es richtet sich explizit an Menschen die Erfahrung mit Programmierung haben und nicht davor zurück schrecken selbst Hand an den Code zu legen.
 *Sollten Sie Fragen haben geben sie gerne Handzeichen oder sprechen uns direkt an.*
@@ -58,8 +60,12 @@ Diese Anleitung begleitet Sie anhand eines Beispiels durch den Prozess Entitäte
 	- `source ./virtual_env/bin/activate`
 	- jetzt befinden Sie sich in einer Virtuellen Python3 Umgebung die wir für Sie vorbereitet haben
 
+#### Was wollen wir hier entwickeln:
+Nehmen wir an Sie haben ein NConf-Ticket das Sie gerne jemandem schenken würden. Diese Person könnte das Ticket ja auch weiter verschenken. Sie würden aber gerne wissen wer das Ticket letztendlich besitzt. Diesen Prozess würden wir gerne auf einer Blockchain abbilden.
 
 #### Dazu sind die folgenden Schritte nötig:
+
+- laden Sie das Repository von https://github.com/chaindrium-inc/NConf-Workshop-2019 herunter. Sie können `git clone` verwenden oder einfach auf github.com `download` klicken und das zip Archiv entpacken.
 - navigieren Sie zu `/src/01_basic/`
 
 - **Erzeugen eines eigenen Wallets**
@@ -99,7 +105,7 @@ Diese Anleitung begleitet Sie anhand eines Beispiels durch den Prozess Entitäte
 	- Jetzt sollte Ihnen das Skript den Namen Ihres Tokens anzeigen
 		- Vielleicht finden Sie ja einen Partner dessen Token Namen Sie auch abfragen können
 
-- **Den Besitzer Ihres Tokens abfragen**
+- **Den Besitzer des Tokens abfragen**
 	- Schauen Sie sich hierzu die Datei `get_token_owner.py` an
 	- ändern Sie die Variable `token_address`, tragen Sie dort die Adresse Ihres Tokens ein
 	- Führen Sie die Datei aus
@@ -120,6 +126,9 @@ Diese Anleitung begleitet Sie anhand eines Beispiels durch den Prozess Entitäte
 		- oder sie schauen sich unter [https://ropsten.etherscan.io/](https://ropsten.etherscan.io/) Ihre Addresse an
 			- geben Sie dazu einfach ihre Adresse in das Suchfenster ein
 			- hier sollten Sie jetzt einen Überblick über Ihr Guthaben und die von Ihnen ausgelösten, bzw. Erhaltenen Transaktionen sehen
+
+
+<br/><br/><br/>
 
 ### Für Hard-Coder
 Die hier präsentierten Aufgaben können Sie nur lösen wenn Sie die Konzepte und Ideen hinter der Anleitung **Für Programmierer** verstanden haben. Hier werden Sie mit Absicht nicht an die Hand genommen sondern sollen selbst eine Anwendung für Blockchains entwickeln. Sollten Sie die Aufgaben zu schwer oder unverständlich finden legen wir Ihnen nahe die Anleitung **Für Programmierer** zu erst zu machen.
