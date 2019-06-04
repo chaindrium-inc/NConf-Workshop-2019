@@ -12,7 +12,7 @@ Dieses Repository enthält drei Teile. Sie können ganz nach Ihrem Wunsch eines 
 - Für Hard-Coder
 
 ### Für Nicht-Programmierer
-Diese Anleitung leitet Sie durch den Prozess eine Transaktion auf dem [Ethereum Test Netzwerk](https://ropsten.etherscan.io/) von einer Addresse zu einer anderen ausführen. Dieses Projekt richtet sich explizit an Menschen die keine Programmiererfahrung haben und trotzdem gerne einen Einblick in den praktischen Umgang mit Blockchains haben möchten.
+Diese Anleitung leitet Sie durch den Prozess eine Transaktion auf dem [Ethereum Test Netzwerk](https://ropsten.etherscan.io/) von einer Addresse zu einer anderen ausführen. Dieses Projekt richtet sich explizit an Teilnehmer die keine Programmiererfahrung haben und trotzdem gerne einen Einblick in den praktischen Umgang mit Blockchains haben möchten.
 *Sollten Sie Fragen haben geben Sie gerne Handzeichen oder sprechen uns direkt an.*
 
 Dazu sind die folgenden Schritte nötig:
