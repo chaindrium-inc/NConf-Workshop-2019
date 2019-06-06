@@ -48,7 +48,7 @@ Dazu sind die folgenden Schritte nötig:
 
 <br/><br/><br/>
 
-### Für Programmierer
+### Für ProgrammiererInnen
 Diese Anleitung begleitet Sie anhand eines Beispiels durch den Prozess Entitäten auf der Blockchain zu erstellen, zu versenden und Daten dieser Entitäten von der Blockchain zu holen. Dieses Projekt erklärt die Basis auf der mit einer Blockchain interagiert werden kann. Es richtet sich explizit an TeilnehmerInnen die Erfahrung mit Programmierung haben und nicht davor zurück schrecken selbst Hand an den Code zu legen.
 *Sollten Sie Fragen haben geben sie gerne Handzeichen oder sprechen uns direkt an.*
 
