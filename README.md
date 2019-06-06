@@ -6,13 +6,13 @@
 
 Lassen Sie sich nicht von der Menge an Text abschrecken, Blockchains sind halt kompliziert :)
 
-Dieses Repository enthält **drei** Teile. Sie können ganz nach Ihrem Wunsch eines der drei Projekte im Zuge des Workshops bearbeiten. Wir empfehlen allerdings den Teil "Für Programmierer" vor dem Teil "Für Hard-Coder" zu machen.
-- Für Nicht-Programmierer
-- Für Programmierer
+Dieses Repository enthält **drei** Teile. Sie können ganz nach Ihrem Wunsch eines der drei Projekte im Zuge des Workshops bearbeiten. Wir empfehlen allerdings den Teil "Für ProgrammiererInnen" vor dem Teil "Für Hard-Coder" zu machen.
+- Für Nicht-ProgrammiererInnen
+- Für ProgrammiererInnen
 - Für Hard-Coder
 
-### Für Nicht-Programmierer
-Diese Anleitung leitet Sie durch den Prozess eine Transaktion auf dem [Ethereum Test Netzwerk](https://ropsten.etherscan.io/) von einer Addresse zu einer anderen ausführen. Dieses Projekt richtet sich explizit an Teilnehmer die keine Programmiererfahrung haben und trotzdem gerne einen Einblick in den praktischen Umgang mit Blockchains haben möchten.
+### Für Nicht-ProgrammiererInnen
+Diese Anleitung leitet Sie durch den Prozess eine Transaktion auf dem [Ethereum Test Netzwerk](https://ropsten.etherscan.io/) von einer Addresse zu einer anderen ausführen. Dieses Projekt richtet sich explizit an TeilnehmerInnen die keine Programmiererfahrung haben und trotzdem gerne einen Einblick in den praktischen Umgang mit Blockchains haben möchten.
 *Sollten Sie Fragen haben geben Sie gerne Handzeichen oder sprechen uns direkt an.*
 
 Dazu sind die folgenden Schritte nötig:
@@ -31,7 +31,7 @@ Dazu sind die folgenden Schritte nötig:
 - **Eine Transaktion Senden**
 	- Sie sollten jetzt eine Übersicht über Ihren Account sehen. Dort können Sie dann unter `Send Transaktion` eine Transaktion senden.
 	- Dazu müssen Sie die entsprechenden Felder ausfüllen
-		- Tragen Sie unter `To Address` eine Addresse ein, vielleicht finden Sie ja einen Partner dem Sie etwas von Ihrem Guthaben schicken möchten.
+		- Tragen Sie unter `To Address` eine Addresse ein, vielleicht finden Sie ja eine(n) PartnerIn dem Sie etwas von Ihrem Guthaben schicken möchten.
 		- Unter `Amount` Tragen Sie bitte den Betrag ein den Sie senden möchten. 
 	- Ihr Account hat momenten ca 0.5 ROP (Die Währung des Test-Netzwerkes), das heißt sie müssen einen Betrag wählen der kleiner ist, das liegt daran dass Transaktionen Gebühren kosten, sollten Sie also versuchen all Ihr Geld zu versenden haben Sie kein Geld mehr um die Transaktions-Gebühren zu bezahlen (wählen Sie einen Betrag der relativ klein ist, damit nicht alles Geld sofort weg ist und andere auch noch ausprobieren können).
 	- Jetzt können Sie auf `Send Transaktion` klicken
@@ -49,7 +49,7 @@ Dazu sind die folgenden Schritte nötig:
 <br/><br/><br/>
 
 ### Für Programmierer
-Diese Anleitung begleitet Sie anhand eines Beispiels durch den Prozess Entitäten auf der Blockchain zu erstellen, zu versenden und Daten dieser Entitäten von der Blockchain zu holen. Dieses Projekt erklärt die Basis auf der mit einer Blockchain interagiert werden kann. Es richtet sich explizit an Menschen die Erfahrung mit Programmierung haben und nicht davor zurück schrecken selbst Hand an den Code zu legen.
+Diese Anleitung begleitet Sie anhand eines Beispiels durch den Prozess Entitäten auf der Blockchain zu erstellen, zu versenden und Daten dieser Entitäten von der Blockchain zu holen. Dieses Projekt erklärt die Basis auf der mit einer Blockchain interagiert werden kann. Es richtet sich explizit an TeilnehmerInnen die Erfahrung mit Programmierung haben und nicht davor zurück schrecken selbst Hand an den Code zu legen.
 *Sollten Sie Fragen haben geben sie gerne Handzeichen oder sprechen uns direkt an.*
 
 #### Was Sie benötigen: 
@@ -110,7 +110,7 @@ Nehmen wir an Sie haben ein NConf-Ticket das Sie gerne jemandem schenken würden
 	- ändern Sie die Variable `token_address`, tragen Sie dort die Adresse Ihres Tokens ein
 	- Führen Sie die Datei aus
 	- Jetzt sollte Ihnen das Skript den Besitzer Ihres Tokens anzeigen
-		- Vielleicht finden Sie ja einen Partner dessen Token Besitzer Sie auch abfragen können
+		- Vielleicht finden Sie ja eine(n) PartnerIn dessen Token Besitzer Sie auch abfragen können
 
 - **Ihr Token jemandem anderen geben**
 	- Schauen Sie sich hierzu die Datei `send_token.py` an
@@ -131,7 +131,7 @@ Nehmen wir an Sie haben ein NConf-Ticket das Sie gerne jemandem schenken würden
 <br/><br/><br/>
 
 ### Für Hard-Coder
-Die hier präsentierten Aufgaben können Sie nur lösen wenn Sie die Konzepte und Ideen hinter der Anleitung **Für Programmierer** verstanden haben. Hier werden Sie mit Absicht nicht an die Hand genommen sondern sollen selbst eine Anwendung für Blockchains entwickeln. Sollten Sie die Aufgaben zu schwer oder unverständlich finden legen wir Ihnen nahe die Anleitung **Für Programmierer** zu erst zu machen.
+Die hier präsentierten Aufgaben sind so gestellt dass Sie mit dem Teil **Für ProgrammiererInnen** lösbar sein sollten. Hier werden Sie mit Absicht nicht an die Hand genommen sondern sollen selbst eine Anwendung für Blockchains entwickeln.
 *Sollten Sie Fragen haben geben sie gerne Handzeichen oder sprechen uns direkt an.*
 
 #### Was Sie benötigen: 
