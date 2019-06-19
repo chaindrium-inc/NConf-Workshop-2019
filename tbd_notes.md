@@ -1,0 +1,7 @@
+- bug with str(get_tx())[2:-1] in deploy_token.py:57
+- make the difference between Coin-Transactions and Contract-call-Transactions clearer
+- feedback was:
+  - nice
+  - too easy
+  - buggy (outch, shame on me)
+- if we mark something for Hard-Coder, it is probably sufficciant to have just "for programmers" stuff.
